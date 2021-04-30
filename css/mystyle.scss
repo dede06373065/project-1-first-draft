@@ -1,0 +1,376 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap");
+$font: "Mulish", sans-serif;
+$backcolor: rgb(245, 245, 245);
+$green: rgb(100, 198, 133);
+$navwordcolor: rgb(75, 81, 92);
+$contentwordcolor: rgb(33, 33, 33);
+$mainwidth: 80%;
+$navheight: 110px;
+$shadow: rgb(200, 200, 200);
+$wordcolor: rgb(128, 128, 128);
+$educolor: rgb(230, 230, 230);
+
+//color and style;
+%background {
+    background-repeat: no-repeat;
+    background-size: 100%;
+    box-shadow: 3px 3px 3px $shadow;
+    border-radius: 3px;
+    cursor: pointer;
+    &:hover {
+        top: 3px;
+    }
+}
+%titleword {
+    color: white;
+    font-weight: bolder;
+    text-align: center;
+}
+%round {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid $green;
+    background-color: azure;
+    left: -6px;
+}
+%one {
+    width: 30px;
+    height: 0.1px;
+    position: absolute;
+    border: 1px solid $green;
+    left: 3px;
+}
+%box {
+    position: absolute;
+    background-color: $educolor;
+    width: 88%;
+    border-left: 2px solid $green;
+    padding: 10px;
+    left: 30px;
+    box-shadow: 3px 3px 3px $shadow;
+    border-radius: 3px;
+}
+
+.main {
+    width: $mainwidth;
+    margin: auto;
+    font-family: $font;
+    .nav {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        .col-md-8 {
+            font-size: 2.5rem;
+        }
+        .col-md-1 {
+            font-size: 1.5rem;
+            padding-top: 20px;
+            cursor: pointer;
+
+        }
+        .btn {
+            display: none;
+
+        }
+        &__sidebar {
+            display: none;
+        }
+    }
+    .content {
+        border: 1px solid $shadow;
+        border-radius: 5px;
+        box-shadow: 3px 3px 3px $shadow;
+        &__home__title {
+            position: relative;
+            @extend %titleword;
+            background-color: $green;
+            border-radius: 5px 5px 0 0;
+            display: flex;
+            padding: 30px;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            .photo {
+                width: 180px;
+                height: 200px;
+                background-image: url(../img/Applicant-photo.jpg);
+                @extend %background;
+            }
+            .description {
+                padding: 20px;
+                .social {
+                    margin-top: 30px;
+                    display: flex;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    li {
+                        width: 40px;
+                        height: 40px;
+                        border-radius: 100%;
+                        margin: 10px;
+                        @extend %background;
+                        background-color: azure;
+                        &:hover {
+                            background-color: antiquewhite;
+                            margin-top: 8px;
+                        }
+                        a{
+                            display: inline-block;
+                            width: 40px;
+                            height: 40px;
+
+                        }
+                    }
+                    #github {
+                        background-image: url(../img/github.png);
+                    }
+                    #linkedin {
+                        background-image: url(../img/in.png);
+                    }
+                    #facebook {
+                        background-image: url(../img/f.png);
+                    }
+                }
+            }
+        }
+        &__home__text {
+            padding: 30px;
+            &__detail {
+                padding-top: 20px;
+            }
+            #tab {
+                margin: 45px;
+                td {
+                    padding: 10px;
+                }
+            }
+        }
+        &__title {
+            background-color: $green;
+            padding: 30px;
+            @extend %titleword;
+            border-radius: 5px 5px 0 0;
+        }
+        &__all {
+            padding: 20px;
+            .col-md-2 {
+                text-align: center;
+                div {
+                    margin: 15px;
+                    height: 100px;
+                    background-image: url("../img/html.png");
+                    cursor: auto;
+                    @extend %background;
+                    &:hover {
+                        border: 1px solid $shadow;
+                    }
+                }
+                .html {
+                    background-image: url("../img/html.png");
+                }
+                .css {
+                    background-image: url("../img/css.png");
+                    background-size: 95%;
+                }
+                .js {
+                    background-image: url("../img/JavaScript.png");
+                }
+                .git {
+                    background-image: url("../img/github.png");
+                }
+                .react {
+                    background-image: url("../img/React.png");
+                }
+                .node {
+                    background-image: url("../img/nodejs.png");
+                }
+            }
+            &__edu__exp {
+                .row {
+                    margin-top: 20px;
+                }
+                &__left {
+                    border-left: 2px solid $wordcolor;
+                    height: 250px;
+                    margin-top: 10px;
+                    .education {
+                        position: relative;
+                        .round {
+                            @extend %round;
+                            top: 30px;
+                        }
+                        .one {
+                            @extend %one;
+                            top: 35px;
+                        }
+                        .box {
+                            @extend %box;
+                            top: 20px;
+                        }
+                        .round1 {
+                            @extend %round;
+                            top: 160px;
+                        }
+                        .one1 {
+                            @extend %one;
+                            top: 165px;
+                        }
+                        .box1 {
+                            @extend %box;
+                            top: 150px;
+                        }
+                        .round2 {
+                            @extend %round;
+                            top: 290px;
+                        }
+                        .one2 {
+                            @extend %one;
+                            top: 295px;
+                        }
+                        .box2 {
+                            @extend %box;
+                            top: 280px;
+                        }
+                    }
+                }
+            }
+            #map {
+                width: 88%;
+                height: 200px;
+                margin-top: 20px;
+                border-radius: 3px;
+            }
+            &__contact {
+                p {
+                    margin-top: 10px;
+                }
+            }
+            &__form {
+                width: 88%;
+                border: 0;
+                border-bottom: 1px solid $shadow;
+                margin-top: 15px;
+                font-size: 1rem;
+                color: $shadow;
+                height: 40px;
+            }
+            #message1 {
+                padding: 10px;
+                background-color: $green;
+                border-radius: 3px;
+                width: 120px;
+                border: 2px solid $green;
+                color: white;
+                font-weight: bolder;
+                &:hover {
+                    background-color: white;
+                    color: $green;
+                }
+                margin-top: 15px;
+            }
+            #message {
+                width: 88%;
+                border: 1px solid $shadow;
+                margin-top: 15px;
+                height: 170px;
+                box-shadow: 3px 3px 3px $shadow;
+                color: $shadow;
+                border-radius: 3px;
+            }
+            &__projects {
+                border-left: 2px solid $wordcolor;
+                height: 435px;
+                margin-top: 10px;
+                margin-bottom: 20px;
+            }
+            &__services {
+                text-align: center;
+                &__img {
+                    margin: auto;
+                    margin-top: 20px;
+                    background-size: 80%;
+                    @extend %background;
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 100%;
+                    margin-bottom: 15px;
+                    background-position: center;
+                    &:hover {
+                        box-shadow: none;
+                        border: 1px solid $shadow;
+                    }
+                }
+                .img0 {
+                    background-image: url("../img/design.png");
+                }
+                .img1 {
+                    background-image: url("../img/develop.png");
+                }
+                .img2 {
+                    background-image: url("../img/mend.png");
+                }
+                .img3 {
+                    background-image: url("../img/deploy.png");
+                }
+                text-align: center;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 993px) {
+    .main {
+        width: 95%;
+        margin: auto;
+        .nav__index {
+            display: none;
+        }
+        #btn {
+            position: absolute;
+            display:block;
+            width: 40px;
+            height: 40px;
+            right: 20px;
+            top: 20px;
+        }
+        #nav__sidebar {
+            width: 80px;
+            height: 170px;
+            li {
+                padding: 10px;
+                text-align: center;
+            }
+            position: fixed;
+            display: none;
+            right: 20px;
+            top: 60px;
+            z-index: 10;
+            background-color: beige;
+            opacity: 0.8;
+            color: $wordcolor;
+            font-weight: bolder;
+        }
+        .content__all__skill .col-md-2 > div {
+            height: 170px;
+        }
+    }
+}
+footer {
+    text-align: center;
+
+    margin-top: 30px;
+}
+.green {
+    color: $green;
+}
+#content__home {
+    display: none;
+}
+#content__resume {
+    display: none;
+}
+#content__contact {
+    display: none;
+}
+#content__projects {
+    display: none;
+}

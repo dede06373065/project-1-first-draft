@@ -1,0 +1,353 @@
+@import url("https://fonts.googleapis.com/css2?family=Mulish:wght@500&display=swap");
+.main .content__all__services__img, .main .content__all .col-md-2 div, .main .content__home__title .description .social li, .main .content__home__title .photo {
+  background-repeat: no-repeat;
+  background-size: 100%;
+  box-shadow: 3px 3px 3px #c8c8c8;
+  border-radius: 3px;
+  cursor: pointer;
+}
+.main .content__all__services__img:hover, .main .content__all .col-md-2 div:hover, .main .content__home__title .description .social li:hover, .main .content__home__title .photo:hover {
+  top: 3px;
+}
+
+.main .content__title, .main .content__home__title {
+  color: white;
+  font-weight: bolder;
+  text-align: center;
+}
+
+.main .content__all__edu__exp__left .education .round2, .main .content__all__edu__exp__left .education .round1, .main .content__all__edu__exp__left .education .round {
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  border: 2px solid #64c685;
+  background-color: azure;
+  left: -6px;
+}
+
+.main .content__all__edu__exp__left .education .one2, .main .content__all__edu__exp__left .education .one1, .main .content__all__edu__exp__left .education .one {
+  width: 30px;
+  height: 0.1px;
+  position: absolute;
+  border: 1px solid #64c685;
+  left: 3px;
+}
+
+.main .content__all__edu__exp__left .education .box2, .main .content__all__edu__exp__left .education .box1, .main .content__all__edu__exp__left .education .box {
+  position: absolute;
+  background-color: #e6e6e6;
+  width: 88%;
+  border-left: 2px solid #64c685;
+  padding: 10px;
+  left: 30px;
+  box-shadow: 3px 3px 3px #c8c8c8;
+  border-radius: 3px;
+}
+
+.main {
+  width: 80%;
+  margin: auto;
+  font-family: "Mulish", sans-serif;
+}
+.main .nav {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+.main .nav .col-md-8 {
+  font-size: 2.5rem;
+}
+.main .nav .col-md-1 {
+  font-size: 1.5rem;
+  padding-top: 20px;
+  cursor: pointer;
+}
+.main .nav .btn {
+  display: none;
+}
+.main .nav__sidebar {
+  display: none;
+}
+.main .content {
+  border: 1px solid #c8c8c8;
+  border-radius: 5px;
+  box-shadow: 3px 3px 3px #c8c8c8;
+}
+.main .content__home__title {
+  position: relative;
+  background-color: #64c685;
+  border-radius: 5px 5px 0 0;
+  display: flex;
+  padding: 30px;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.main .content__home__title .photo {
+  width: 180px;
+  height: 200px;
+  background-image: url(../img/Applicant-photo.jpg);
+}
+.main .content__home__title .description {
+  padding: 20px;
+}
+.main .content__home__title .description .social {
+  margin-top: 30px;
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.main .content__home__title .description .social li {
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin: 10px;
+  background-color: azure;
+}
+.main .content__home__title .description .social li:hover {
+  background-color: antiquewhite;
+  margin-top: 8px;
+}
+.main .content__home__title .description .social li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+}
+.main .content__home__title .description .social #github {
+  background-image: url(../img/github.png);
+}
+.main .content__home__title .description .social #linkedin {
+  background-image: url(../img/in.png);
+}
+.main .content__home__title .description .social #facebook {
+  background-image: url(../img/f.png);
+}
+.main .content__home__text {
+  padding: 30px;
+}
+.main .content__home__text__detail {
+  padding-top: 20px;
+}
+.main .content__home__text #tab {
+  margin: 45px;
+}
+.main .content__home__text #tab td {
+  padding: 10px;
+}
+.main .content__title {
+  background-color: #64c685;
+  padding: 30px;
+  border-radius: 5px 5px 0 0;
+}
+.main .content__all {
+  padding: 20px;
+}
+.main .content__all .col-md-2 {
+  text-align: center;
+}
+.main .content__all .col-md-2 div {
+  margin: 15px;
+  height: 100px;
+  background-image: url("../img/html.png");
+  cursor: auto;
+}
+.main .content__all .col-md-2 div:hover {
+  border: 1px solid #c8c8c8;
+}
+.main .content__all .col-md-2 .html {
+  background-image: url("../img/html.png");
+}
+.main .content__all .col-md-2 .css {
+  background-image: url("../img/css.png");
+  background-size: 95%;
+}
+.main .content__all .col-md-2 .js {
+  background-image: url("../img/JavaScript.png");
+}
+.main .content__all .col-md-2 .git {
+  background-image: url("../img/github.png");
+}
+.main .content__all .col-md-2 .react {
+  background-image: url("../img/React.png");
+}
+.main .content__all .col-md-2 .node {
+  background-image: url("../img/nodejs.png");
+}
+.main .content__all__edu__exp .row {
+  margin-top: 20px;
+}
+.main .content__all__edu__exp__left {
+  border-left: 2px solid gray;
+  height: 250px;
+  margin-top: 10px;
+}
+.main .content__all__edu__exp__left .education {
+  position: relative;
+}
+.main .content__all__edu__exp__left .education .round {
+  top: 30px;
+}
+.main .content__all__edu__exp__left .education .one {
+  top: 35px;
+}
+.main .content__all__edu__exp__left .education .box {
+  top: 20px;
+}
+.main .content__all__edu__exp__left .education .round1 {
+  top: 160px;
+}
+.main .content__all__edu__exp__left .education .one1 {
+  top: 165px;
+}
+.main .content__all__edu__exp__left .education .box1 {
+  top: 150px;
+}
+.main .content__all__edu__exp__left .education .round2 {
+  top: 290px;
+}
+.main .content__all__edu__exp__left .education .one2 {
+  top: 295px;
+}
+.main .content__all__edu__exp__left .education .box2 {
+  top: 280px;
+}
+.main .content__all #map {
+  width: 88%;
+  height: 200px;
+  margin-top: 20px;
+  border-radius: 3px;
+}
+.main .content__all__contact p {
+  margin-top: 10px;
+}
+.main .content__all__form {
+  width: 88%;
+  border: 0;
+  border-bottom: 1px solid #c8c8c8;
+  margin-top: 15px;
+  font-size: 1rem;
+  color: #c8c8c8;
+  height: 40px;
+}
+.main .content__all #message1 {
+  padding: 10px;
+  background-color: #64c685;
+  border-radius: 3px;
+  width: 120px;
+  border: 2px solid #64c685;
+  color: white;
+  font-weight: bolder;
+  margin-top: 15px;
+}
+.main .content__all #message1:hover {
+  background-color: white;
+  color: #64c685;
+}
+.main .content__all #message {
+  width: 88%;
+  border: 1px solid #c8c8c8;
+  margin-top: 15px;
+  height: 170px;
+  box-shadow: 3px 3px 3px #c8c8c8;
+  color: #c8c8c8;
+  border-radius: 3px;
+}
+.main .content__all__projects {
+  border-left: 2px solid gray;
+  height: 435px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+.main .content__all__services {
+  text-align: center;
+  text-align: center;
+}
+.main .content__all__services__img {
+  margin: auto;
+  margin-top: 20px;
+  background-size: 80%;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  margin-bottom: 15px;
+  background-position: center;
+}
+.main .content__all__services__img:hover {
+  box-shadow: none;
+  border: 1px solid #c8c8c8;
+}
+.main .content__all__services .img0 {
+  background-image: url("../img/design.png");
+}
+.main .content__all__services .img1 {
+  background-image: url("../img/develop.png");
+}
+.main .content__all__services .img2 {
+  background-image: url("../img/mend.png");
+}
+.main .content__all__services .img3 {
+  background-image: url("../img/deploy.png");
+}
+
+@media only screen and (max-width: 993px) {
+  .main {
+    width: 95%;
+    margin: auto;
+  }
+  .main .nav__index {
+    display: none;
+  }
+  .main #btn {
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 40px;
+    right: 20px;
+    top: 20px;
+  }
+  .main #nav__sidebar {
+    width: 80px;
+    height: 170px;
+    position: fixed;
+    display: none;
+    right: 20px;
+    top: 60px;
+    z-index: 10;
+    background-color: beige;
+    opacity: 0.8;
+    color: gray;
+    font-weight: bolder;
+  }
+  .main #nav__sidebar li {
+    padding: 10px;
+    text-align: center;
+  }
+  .main .content__all__skill .col-md-2 > div {
+    height: 170px;
+  }
+}
+footer {
+  text-align: center;
+  margin-top: 30px;
+}
+
+.green {
+  color: #64c685;
+}
+
+#content__home {
+  display: none;
+}
+
+#content__resume {
+  display: none;
+}
+
+#content__contact {
+  display: none;
+}
+
+#content__projects {
+  display: none;
+}
+
+/*# sourceMappingURL=mystyle.css.map */
